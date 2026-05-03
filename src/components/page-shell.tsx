@@ -42,11 +42,11 @@ function MobileStickyCTA() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-border bg-background/95 p-3 shadow-elegant backdrop-blur lg:hidden">
       <div className="flex gap-2">
-        <a href="https://yaarwin.net/#/" target="_blank" rel="noopener noreferrer"
+        <a href="https://yaarwin.net/#/register?invitationCode=26863113492" target="_blank" rel="noopener noreferrer"
           className="flex-1 rounded-md border border-primary px-4 py-2.5 text-center text-sm font-semibold text-primary">
           Login
         </a>
-        <a href="https://yaarwin.net/#/" target="_blank" rel="noopener noreferrer"
+        <a href="https://yaarwin.net/#/register?invitationCode=26863113492" target="_blank" rel="noopener noreferrer"
           className="flex-1 rounded-md bg-gradient-hero px-4 py-2.5 text-center text-sm font-semibold text-primary-foreground shadow-elegant">
           Register Now
         </a>
