@@ -56,7 +56,7 @@ export const Route = createRootRoute({
           "@type": "Organization",
           name: "YaarWin",
           url: "https://yaarwinn.live/",
-          logo: "https://yaarwin-info.lovable.app/apple-touch-icon.png",
+          logo: "https://yaarwinn.live/apple-touch-icon.png",
           sameAs: ["https://t.me/yaarrwin"],
         }),
       },
