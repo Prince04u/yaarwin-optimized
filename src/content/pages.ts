@@ -163,7 +163,7 @@ export const gamesContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Ready to explore the YaarWin game library?",
-    "href": "https://yaarwin.net/#/"
+    "href": ""
   },
   "related": [
     {
@@ -349,7 +349,7 @@ export const howToPlayContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin and put this guide into practice",
-    "href": "https://yaarwin.net/#/"
+    "href": ""
   },
   "related": [
     {
@@ -511,7 +511,7 @@ export const giftCodeContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Redeem the latest YaarWin codes inside the app",
-    "href": "https://yaarwin.net/#/"
+    "href": ""
   },
   "related": [
     {
@@ -685,7 +685,7 @@ export const downloadContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Get the latest YaarWin app",
-    "href": "https://yaarwin.net/#/"
+    "href": ""
   },
   "related": [
     {
@@ -831,7 +831,7 @@ export const giftCodeGuideContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": ""
   },
   "related": [
     {
@@ -962,7 +962,7 @@ export const aboutContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": ""
   },
   "related": [
     {
@@ -1082,7 +1082,7 @@ export const contactContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
@@ -1228,7 +1228,7 @@ export const faqContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
@@ -1358,7 +1358,7 @@ export const privacyContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
@@ -1481,7 +1481,7 @@ export const termsContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
@@ -1590,7 +1590,7 @@ export const disclaimerContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
@@ -1770,7 +1770,7 @@ export const agencyContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
@@ -1938,7 +1938,7 @@ export const bonusesContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
@@ -2068,7 +2068,7 @@ export const giftCodeTodayContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
@@ -2195,7 +2195,7 @@ export const workingCodesContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/"
+    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
   },
   "related": [
     {
