@@ -1,6 +1,6 @@
 export const SITE = {
   name: "YaarWin",
-  domain: "https://yaarwin-info.lovable.app",
+  domain: "https://yaarwinn.live/",
   tagline: "India's trusted YaarWin colour prediction guide & gift code hub",
   loginUrl: "https://yaarwin.net/#/",
   registerUrl: "https://yaarwin.net/#/",
