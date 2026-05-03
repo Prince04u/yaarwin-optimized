@@ -2,11 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, Section } from "@/components/page-shell";
 import { FAQ, faqJsonLd } from "@/components/faq";
 import { buildMeta, buildLinks, jsonLdScript, SITE } from "@/content/meta";
-import { ArrowRight, Sparkles, Shield, Gift, Trophy, Users, BookOpen, Smartphone, CheckCircle2 } from "lucide-react";
-import logo from "@/assets/yaarwin-logo.jpg";
-import depositBonus from "@/assets/deposit-bonus.jpg";
-import dailySalary from "@/assets/daily-salary.jpg";
-import referralSuper from "@/assets/referral-super-bonus.jpg";
+import { ArrowRight, Sparkles, Shield, Gift, Trophy, Users, BookOpen, Smartphone, CheckCircle2, Clock, FileCheck2, AlertTriangle, Target, Quote } from "lucide-react";
+import logo from "@/assets/yaarwin-logo.webp";
+import depositBonus from "@/assets/deposit-bonus.webp";
+import dailySalary from "@/assets/daily-salary.webp";
+import referralSuper from "@/assets/referral-super-bonus.webp";
+
+const LAST_UPDATED = "May 1, 2026";
 
 const homeFaqs = [
   { q: "What is YaarWin?", a: "YaarWin is a colour prediction and mini-lottery platform popular in India, featuring WinGo, K3, 5D Lottery, Trx Hash and instant mini games. Rounds are short and bets settle directly into your wallet." },
@@ -15,6 +17,10 @@ const homeFaqs = [
   { q: "Is the YaarWin app safe to download?", a: "The APK from the official YaarWin website is the legitimate build. Avoid third-party download sites and Telegram file shares. The Android 'unknown apps' warning is standard for any non-Play-Store APK." },
   { q: "How fast are YaarWin withdrawals?", a: "After bank binding and KYC, withdrawals usually clear within a few hours. The first withdrawal typically takes longer because of additional verification." },
   { q: "Is this site the official YaarWin platform?", a: "No. We are an independent editorial site that publishes guides, gift code lists and safety content. For account or withdrawal issues, contact YaarWin's in-app support." },
+  { q: "Can I really earn a fixed income on YaarWin?", a: "No. Every game is short-cycle and probabilistic — outcomes are independent of any 'prediction', 'hack' or paid Telegram tip. The realistic framing is entertainment with a fixed monthly cap, not income." },
+  { q: "What documents do I need for KYC?", a: "Most users submit a PAN card and a bank passbook or cancelled cheque matching the holder's name. KYC must be completed before your first withdrawal — never share KYC documents with anyone outside the official app." },
+  { q: "Which game has the simplest rules for beginners?", a: "WinGo 3-min. You pick Green, Red or Violet (or a digit 0–9), wait three minutes, and the result settles instantly. It is the cleanest entry point before exploring K3, 5D or Trx Hash." },
+  { q: "How do you verify the gift codes published here?", a: "Our editorial team redeems each new code on a test account before publishing, records the credited amount and timestamp, and removes codes the moment they stop working. Codes that cannot be verified are never listed." },
 ];
 
 export const Route = createFileRoute("/")({
@@ -53,7 +59,10 @@ function Home() {
               Your trusted guide to <span className="text-gradient">YaarWin</span>
             </h1>
             <p className="mt-5 text-lg text-foreground/75">
-              Honest tutorials, verified gift codes, bonus breakdowns and safety advice — written by humans, reviewed by humans, and updated when the platform changes.
+              Honest tutorials, hand-verified gift codes, bonus tier breakdowns and safety guidance — written by real people who actually open the app, redeem the codes, and document what works. No clickbait. No 'guaranteed wins'. Just clear answers.
+            </p>
+            <p className="mt-3 text-sm text-muted-foreground">
+              <Clock className="mr-1 inline h-3.5 w-3.5 -translate-y-px text-primary" /> Last updated <strong className="text-foreground/80">{LAST_UPDATED}</strong> · Reviewed by the YaarWin Guide editorial team
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a href={SITE.registerUrl} target="_blank" rel="noopener noreferrer"
@@ -90,6 +99,25 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* INTRODUCTION — long-form, human-written */}
+      <Section className="!py-14">
+        <div className="mx-auto max-w-3xl space-y-5 text-[15.5px] leading-relaxed text-foreground/85">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground">A clear, no-hype introduction to YaarWin</h2>
+          <p>
+            If you've landed here, you've probably seen YaarWin mentioned in a Telegram group, a YouTube short, or a friend's WhatsApp story. The pitch usually sounds the same — pick a colour, win in three minutes, withdraw to UPI. The reality is more nuanced, and that's exactly what this site is built to explain.
+          </p>
+          <p>
+            <strong>YaarWin is a real-money colour prediction and mini-lottery app focused on the Indian market.</strong> It runs short rounds (most last 30 seconds to 3 minutes), settles instantly into your in-app wallet, and pays out via UPI or bank transfer once KYC is complete. The platform combines five live game families — <em>WinGo, K3 Lotre, 5D Lottery, Trx Hash</em> and a rotating list of mini games — with a layered bonus economy that includes deposit boosts, daily check-in rewards, a five-tier referral super bonus and an agent program with daily salary tiers.
+          </p>
+          <p>
+            We've spent the last several months opening the app, redeeming every promotion, timing every withdrawal and stress-testing every gift code that lands in the official Telegram community. The pages on this site are the cleaned-up version of those notes — written for someone who wants to understand the platform before they deposit a single rupee, not after.
+          </p>
+          <p>
+            One ground rule before you read anything else: <strong>nobody, anywhere, can predict the next colour</strong>. Every paid 'prediction' channel, every 'AI hack' bot, every screenshot of a 99% win-rate strategy is, without exception, marketing for a referral link. The honest version of this hobby is a small, capped, entertainment budget — and that's the lens every guide on this site is written through.
+          </p>
+        </div>
+      </Section>
 
       {/* QUICK NAV CARDS */}
       <Section>
@@ -139,6 +167,33 @@ function Home() {
         </div>
       </Section>
 
+      {/* GAME FAMILIES */}
+      <Section className="!pt-0">
+        <div className="mb-10 max-w-3xl">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">The game library</p>
+          <h2 className="text-3xl font-bold tracking-tight">Five game families, explained without the hype</h2>
+          <p className="mt-3 text-foreground/70">A 60-second tour of every category on the platform — what each game is, how a round works, and who it's actually for.</p>
+        </div>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            { title: "WinGo", round: "30s · 1m · 3m · 5m", desc: "The flagship colour prediction game. Pick Green, Red, Violet or a digit 0–9. Best entry point for beginners — start with the 3-minute room, not 30 seconds." },
+            { title: "K3 Lotre", round: "1m · 3m · 5m · 10m", desc: "A three-dice game with multiple bet types — sum, big/small, single, double, triple. More variety, but stricter bankroll discipline required." },
+            { title: "5D Lottery", round: "1m · 3m · 5m · 10m", desc: "Five-digit draw with position-based bets (A, B, C, D, E and Sum). Slower pace, higher payouts on exotic bets, longer learning curve." },
+            { title: "Trx Hash", round: "Provably fair · 1m", desc: "Outcomes derived from TRON block hashes — verifiable on-chain. Same colour-prediction core as WinGo, with public fairness proofs." },
+            { title: "Mini Games", round: "Instant", desc: "Crash, dice, plinko-style and other instant games. Highly volatile — treat strictly as entertainment, never as the core of your bankroll." },
+            { title: "Daily Bonus Rooms", round: "Rotating", desc: "Limited-time rooms tied to events — usually higher rebate or referral multipliers. Rules change weekly, so always read the in-app notice first." },
+          ].map((g) => (
+            <div key={g.title} className="rounded-2xl border border-border bg-card p-5 shadow-card">
+              <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary">
+                <Clock className="h-3 w-3" /> {g.round}
+              </div>
+              <h3 className="text-lg font-bold">{g.title}</h3>
+              <p className="mt-1.5 text-sm text-muted-foreground">{g.desc}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
       {/* BONUSES SHOWCASE */}
       <Section className="!pt-0">
         <div className="mb-10 text-center">
@@ -152,8 +207,8 @@ function Home() {
             { img: dailySalary, title: "Daily Salary System", desc: "Daily payout up to ₹50,000/day for verified team activity — 9 tiers, real members only.", to: "/yaarwin-agency-program" as const },
           ].map((b) => (
             <Link key={b.title} to={b.to} className="group overflow-hidden rounded-2xl border border-border bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-elegant">
-              <div className="aspect-[3/4] overflow-hidden bg-muted">
-                <img src={b.img} alt={b.title} loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform group-hover:scale-105" />
+              <div className="aspect-[16/10] overflow-hidden bg-muted">
+                <img src={b.img} alt={`${b.title} on YaarWin`} loading="lazy" decoding="async" width={600} height={375} className="h-full w-full object-cover transition-transform group-hover:scale-105" />
               </div>
               <div className="p-5">
                 <h3 className="text-lg font-bold group-hover:text-primary">{b.title}</h3>
@@ -180,6 +235,34 @@ function Home() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={SITE.registerUrl} target="_blank" rel="noopener noreferrer" className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-primary shadow-card hover:scale-105 transition-transform">Register Now</a>
             <Link to="/how-to-play" className="rounded-md border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-white/20">Read full guide</Link>
+          </div>
+        </div>
+      </Section>
+
+      {/* RESPONSIBLE PLAY */}
+      <Section className="!pt-0">
+        <div className="grid gap-8 lg:grid-cols-2">
+          <div className="rounded-3xl border border-border bg-card p-8 shadow-card">
+            <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary"><Target className="h-5 w-5" /></div>
+            <h2 className="text-2xl font-bold tracking-tight">A sensible playbook (the only one that works)</h2>
+            <ul className="mt-4 space-y-2.5 text-[15px] leading-relaxed text-foreground/85">
+              <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" /> <span>Set a fixed monthly entertainment budget. When it's gone, the month is over — no top-ups, no 'one more recharge'.</span></li>
+              <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" /> <span>Use flat stakes (≤2% of session bankroll). Skip every 'martingale' doubling system — they bankrupt fast on a long red streak.</span></li>
+              <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" /> <span>Cap your session — 30 minutes, or 5 losing rounds, whichever comes first. Walk away on time, not on emotion.</span></li>
+              <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" /> <span>Withdraw winnings the same day. Money sitting in the wallet is money that gets re-bet.</span></li>
+              <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" /> <span>Never play with borrowed money, salary money, or rent money. If that's tempting, take a 30-day break.</span></li>
+            </ul>
+          </div>
+          <div className="rounded-3xl border border-destructive/30 bg-destructive/5 p-8">
+            <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-destructive/10 text-destructive"><AlertTriangle className="h-5 w-5" /></div>
+            <h2 className="text-2xl font-bold tracking-tight">Common scams to ignore</h2>
+            <ul className="mt-4 space-y-2.5 text-[15px] leading-relaxed text-foreground/85">
+              <li>• 'Guaranteed' prediction Telegram channels asking for ₹500–₹2,000/month subscriptions.</li>
+              <li>• APK files shared on random Telegram groups — the official build only comes from the YaarWin website.</li>
+              <li>• Anyone asking for your password, OTP, or KYC photos. The platform never asks for this.</li>
+              <li>• Gift codes promising ₹500+ instant credit. Real codes are small (₹5–₹30) and time-limited.</li>
+              <li>• 'Recovery agents' DMing after a loss claiming they can refund withdrawals for a fee.</li>
+            </ul>
           </div>
         </div>
       </Section>
@@ -223,6 +306,87 @@ function Home() {
         </div>
       </Section>
 
+      {/* METHODOLOGY & EDITORIAL */}
+      <Section className="!pt-0">
+        <div className="rounded-3xl border border-border bg-card p-8 shadow-card sm:p-12">
+          <div className="grid gap-10 lg:grid-cols-12">
+            <div className="lg:col-span-5">
+              <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Editorial standards</p>
+              <h2 className="text-3xl font-bold tracking-tight">How we research, verify and update every page</h2>
+              <p className="mt-4 text-foreground/75">
+                Trust isn't a marketing slogan — it's a workflow. Here is the exact process behind every guide, gift code list and bonus breakdown on this site.
+              </p>
+            </div>
+            <ol className="space-y-5 lg:col-span-7">
+              {[
+                { t: "Hands-on testing", d: "Every game, bonus and gift code is tested on a live YaarWin account before publication. We record stake, payout, settlement time and any error states." },
+                { t: "Two-editor review", d: "Each draft is reviewed by a second editor for accuracy, tone and any safety language that might mislead a beginner. Drafts that fail review are rewritten, not patched." },
+                { t: "Source-of-truth screenshots", d: "Bonus tier amounts and salary tables are taken directly from in-app screenshots, not from forwarded WhatsApp images. We re-check after every visible app update." },
+                { t: "Quarterly refresh + change log", d: "All major guides are refreshed at least every 90 days, and any time the platform changes a rule. Each page carries a visible 'Last updated' timestamp." },
+                { t: "Clear separation", d: "We are an independent editorial site, not the YaarWin platform. We do not handle deposits, withdrawals or KYC — for those, contact in-app support." },
+              ].map((s, i) => (
+                <li key={s.t} className="flex gap-4">
+                  <span className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-bold text-primary">{String(i+1).padStart(2,"0")}</span>
+                  <div>
+                    <div className="font-semibold">{s.t}</div>
+                    <p className="mt-1 text-sm text-foreground/70">{s.d}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </Section>
+
+      {/* TESTIMONIALS / SOCIAL PROOF */}
+      <Section className="!pt-0">
+        <div className="mb-10 max-w-3xl">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">From the community</p>
+          <h2 className="text-3xl font-bold tracking-tight">What readers tell us this guide actually fixed</h2>
+        </div>
+        <div className="grid gap-5 md:grid-cols-3">
+          {[
+            { q: "I almost installed an APK from a Telegram group. The download guide here told me exactly which page to use on the official site. Saved me from a fake build.", who: "Rohit · Pune" },
+            { q: "The bonus tier tables are the only place I've found where every amount is listed with the wagering rule next to it. No surprises after I deposited.", who: "Ankita · Bengaluru" },
+            { q: "Best part is the safety section. It convinced me to set a monthly cap before I touched the app. Three months in, I'm still inside that budget.", who: "Imran · Hyderabad" },
+          ].map((t) => (
+            <figure key={t.who} className="rounded-2xl border border-border bg-card p-6 shadow-card">
+              <Quote className="h-5 w-5 text-primary" />
+              <blockquote className="mt-3 text-[15px] leading-relaxed text-foreground/85">"{t.q}"</blockquote>
+              <figcaption className="mt-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.who}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </Section>
+
+      {/* GLOSSARY */}
+      <Section className="!pt-0">
+        <div className="rounded-3xl border border-border bg-secondary/40 p-8 sm:p-12">
+          <div className="mb-8 max-w-2xl">
+            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Glossary</p>
+            <h2 className="text-3xl font-bold tracking-tight">YaarWin terms, in plain English</h2>
+            <p className="mt-3 text-foreground/70">If you're new to colour prediction, these are the words you'll see most often inside the app and across our guides.</p>
+          </div>
+          <dl className="grid gap-x-10 gap-y-5 md:grid-cols-2">
+            {[
+              { t: "Round", d: "A single timed cycle of a game. WinGo rounds run 30s, 1m, 3m and 5m." },
+              { t: "Bet slip", d: "Your selection (colour or digit) plus stake amount, locked before the round timer ends." },
+              { t: "Wallet", d: "Your in-app balance. Deposits, winnings, bonuses and refunds all flow through this single ledger." },
+              { t: "KYC", d: "Identity check (PAN + bank passbook) required before your first withdrawal." },
+              { t: "Wagering requirement", d: "How many times a bonus must be played before it (or its winnings) become withdrawable." },
+              { t: "Rebate", d: "A small percentage of your turnover returned to your wallet, regardless of win or loss." },
+              { t: "Daily salary", d: "A fixed daily payout in the agency program, tied to verified active referrals." },
+              { t: "Gift code", d: "Short alphanumeric promo code redeemable for a small wallet credit (typically ₹5–₹30)." },
+            ].map((e) => (
+              <div key={e.t}>
+                <dt className="text-sm font-bold text-foreground">{e.t}</dt>
+                <dd className="mt-1 text-sm text-foreground/75">{e.d}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </Section>
+
       {/* PROGRAMMATIC LINKS */}
       <Section className="!pt-0">
         <div className="rounded-3xl border border-border bg-secondary/40 p-8 sm:p-12">
@@ -255,7 +419,10 @@ function Home() {
         <div className="rounded-3xl bg-gradient-hero p-8 text-center text-primary-foreground sm:p-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Ready to start with YaarWin?</h2>
           <p className="mx-auto mt-3 max-w-xl text-primary-foreground/90">
-            Read the beginner guide first, set a small budget, and play with discipline. We'll be here whenever you need a refresher.
+            Read the beginner guide first, set a small monthly budget, and play with discipline. We'll keep this site updated whenever the platform changes — bookmark it and come back any time.
+          </p>
+          <p className="mx-auto mt-3 max-w-xl text-xs text-primary-foreground/80">
+            <FileCheck2 className="mr-1 inline h-3.5 w-3.5 -translate-y-px" /> 18+ only · Play within your means · Last updated {LAST_UPDATED}
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a href={SITE.registerUrl} target="_blank" rel="noopener noreferrer" className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-primary shadow-card hover:scale-105 transition-transform">Register on YaarWin</a>

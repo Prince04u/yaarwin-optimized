@@ -1,9 +1,9 @@
 import type { ContentPageProps } from "@/components/content-page";
-import depositBonus from "@/assets/deposit-bonus.jpg";
-import agentReferral from "@/assets/agent-referral-bonus.jpg";
-import referralSuper from "@/assets/referral-super-bonus.jpg";
-import dailySalary from "@/assets/daily-salary.jpg";
-import adsFeeDaily from "@/assets/ads-fee-daily.jpg";
+import depositBonus from "@/assets/deposit-bonus.webp";
+import agentReferral from "@/assets/agent-referral-bonus.webp";
+import referralSuper from "@/assets/referral-super-bonus.webp";
+import dailySalary from "@/assets/daily-salary.webp";
+import adsFeeDaily from "@/assets/ads-fee-daily.webp";
 
 export const gamesContent: ContentPageProps = {
   "eyebrow": "Game Library",

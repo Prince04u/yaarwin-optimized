@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/yaarwin-logo.jpg";
+import logo from "@/assets/yaarwin-logo.webp";
 
 const navLinks = [
   { to: "/", label: "Home" },

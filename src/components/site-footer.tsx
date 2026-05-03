@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/yaarwin-logo.jpg";
+import logo from "@/assets/yaarwin-logo.webp";
 
 export function SiteFooter() {
   return (
