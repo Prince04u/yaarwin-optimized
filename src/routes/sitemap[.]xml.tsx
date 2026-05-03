@@ -9,7 +9,7 @@ const staticPaths = [
   "/yaarwin-agency-program", "/yaarwin-bonuses", "/yaarwin-giftcode-today", "/yaarwin-working-gift-codes-2026",
 ];
 
-export const Route = createFileRoute("/sitemap.xml")({
+export const Route = createFileRoute("/custom-sitemap.xml")({
   server: {
     handlers: {
       GET: () => {
