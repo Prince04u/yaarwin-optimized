@@ -1,1 +1,34 @@
-597b6b3ea666405a8c35c121777d0ff0
+POST /IndexNow HTTP/1.1
+Host: api.indexnow.org
+Content-Type: application/json; charset=utf-8
+
+{
+  "host": "yaarwinn.live",
+  "key": "597b6b3ea666405a8c35c121777d0ff0",
+  "keyLocation": "https://yaarwinn.live/597b6b3ea666405a8c35c121777d0ff0.txt",
+  "urlList": [
+    "https://yaarwinn.live/",
+    "https://yaarwinn.live/games",
+    "https://yaarwinn.live/how-to-play",
+    "https://yaarwinn.live/gift-code",
+    "https://yaarwinn.live/download-app",
+    "https://yaarwinn.live/gift-code-guide",
+    "https://yaarwinn.live/about",
+    "https://yaarwinn.live/contact",
+    "https://yaarwinn.live/faq",
+    "https://yaarwinn.live/blog",
+    "https://yaarwinn.live/privacy-policy",
+    "https://yaarwinn.live/terms",
+    "https://yaarwinn.live/disclaimer",
+    "https://yaarwinn.live/yaarwin-agency-program",
+    "https://yaarwinn.live/yaarwin-bonuses",
+    "https://yaarwinn.live/yaarwin-giftcode-today",
+    "https://yaarwinn.live/yaarwin-working-gift-codes-2026",
+    "https://yaarwinn.live/blog/yaarwin-beginner-guide-2026",
+    "https://yaarwinn.live/blog/wingo-strategy-overview",
+    "https://yaarwinn.live/blog/spotting-fake-yaarwin-channels",
+    "https://yaarwinn.live/blog/yaarwin-app-vs-website",
+    "https://yaarwinn.live/blog/common-yaarwin-mistakes",
+    "https://yaarwinn.live/blog/responsible-play-checklist"
+  ]
+}
