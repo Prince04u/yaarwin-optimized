@@ -55,7 +55,7 @@ export const Route = createRootRoute({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "YaarWin",
-          url: "https://yaarwin-info.lovable.app",
+          url: "https://yaarwinn.live/",
           logo: "https://yaarwin-info.lovable.app/apple-touch-icon.png",
           sameAs: ["https://t.me/yaarrwin"],
         }),
