@@ -26,8 +26,8 @@ const homeFaqs = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: buildMeta({
-      title: "YaarWin — Colour Prediction Guide, Login, Gift Codes & Bonuses 2026",
-      description: "India's trusted YaarWin information hub. Learn how to play, claim verified gift codes, register, login, download the app and stay safe — all in one place.",
+      title: "YaarWin Login & Register – Free Bonus Codes 2026",
+      description: "Login or register on YaarWin easily. Get updated bonus codes, free rewards and step-by-step guide for secure access in 2026.",
       path: "/",
     }),
     links: buildLinks("/"),
