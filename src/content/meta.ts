@@ -1,12 +1,18 @@
 export const SITE = {
   name: "YaarWin",
-  domain: "https://yaarwinn.live",
+  domain: "https://yaarwinn.live", // ❗ no trailing slash
   tagline: "India's trusted YaarWin colour prediction guide & gift code hub",
   loginUrl: "https://yaarwin.net/#/",
   registerUrl: "https://yaarwin.net/#/",
   telegram: "https://t.me/yaarrwin",
 };
 
+// ✅ universal URL join fix
+export function joinUrl(base: string, path: string) {
+  return `${base.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
+}
+
+// ✅ META TAGS
 export function buildMeta(opts: {
   title: string;
   description: string;
@@ -14,18 +20,22 @@ export function buildMeta(opts: {
   image?: string;
   type?: string;
 }) {
-  const url = `${SITE.domain}${opts.path}`;
+  const url = joinUrl(SITE.domain, opts.path);
+
   return [
     { title: opts.title },
     { name: "description", content: opts.description },
     { name: "robots", content: "index, follow" },
     { name: "author", content: SITE.name },
+
     { property: "og:title", content: opts.title },
     { property: "og:description", content: opts.description },
     { property: "og:url", content: url },
     { property: "og:type", content: opts.type ?? "website" },
     { property: "og:site_name", content: SITE.name },
+
     ...(opts.image ? [{ property: "og:image", content: opts.image }] : []),
+
     { name: "twitter:card", content: opts.image ? "summary_large_image" : "summary" },
     { name: "twitter:title", content: opts.title },
     { name: "twitter:description", content: opts.description },
@@ -33,10 +43,12 @@ export function buildMeta(opts: {
   ];
 }
 
+// ✅ CANONICAL LINKS
 export function buildLinks(path: string) {
-  return [{ rel: "canonical", href: `${SITE.domain}${path}` }];
+  return [{ rel: "canonical", href: joinUrl(SITE.domain, path) }];
 }
 
+// ✅ BREADCRUMB SCHEMA
 export function breadcrumbJsonLd(crumbs: { name: string; url: string }[]) {
   return {
     "@context": "https://schema.org",
@@ -45,11 +57,12 @@ export function breadcrumbJsonLd(crumbs: { name: string; url: string }[]) {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      item: `${SITE.domain}${c.url}`,
+      item: joinUrl(SITE.domain, c.url),
     })),
   };
 }
 
+// ✅ JSON-LD SCRIPT
 export function jsonLdScript(data: unknown) {
   return {
     type: "application/ld+json" as const,
