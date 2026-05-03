@@ -36,9 +36,9 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="hidden items-center gap-2 lg:flex">
-          <a href="https://yaarwin.net/#/" target="_blank" rel="noopener noreferrer"
+          <a href="https://yaarwin.net/#/register?invitationCode=26863113492" target="_blank" rel="noopener noreferrer"
             className="rounded-md px-4 py-2 text-sm font-medium text-foreground hover:text-primary">Login</a>
-          <a href="https://yaarwin.net/#/" target="_blank" rel="noopener noreferrer"
+          <a href="https://yaarwin.net/#/register?invitationCode=26863113492" target="_blank" rel="noopener noreferrer"
             className="rounded-md bg-gradient-hero px-4 py-2 text-sm font-semibold text-primary-foreground shadow-elegant transition-transform hover:scale-[1.02]">
             Register
           </a>
@@ -56,7 +56,7 @@ export function SiteHeader() {
                 {l.label}
               </Link>
             ))}
-            <a href="https://yaarwin.net/#/" target="_blank" rel="noopener noreferrer"
+            <a href="https://yaarwin.net/#/register?invitationCode=26863113492" target="_blank" rel="noopener noreferrer"
               className="mt-2 rounded-md bg-gradient-hero px-4 py-2.5 text-center text-sm font-semibold text-primary-foreground">
               Register Now
             </a>
