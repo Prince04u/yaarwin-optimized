@@ -56,11 +56,11 @@ function Home() {
               <Sparkles className="h-3.5 w-3.5" /> Updated for 2026 · Independent guide
             </div>
            <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-  YaarWin Login & Register Guide 2026 – Bonus Codes & Safe Access
+  YaarWin Login & Register 2026 – Bonus Codes & Secure Access
 </h1>
 
 <p className="mt-5 text-lg text-foreground/75">
-  Step-by-step YaarWin login and registration guide with latest bonus codes, free rewards, and safe account access tips. Learn how to sign up, claim offers, and use simple methods to navigate the platform securely in 2026.
+  Login or register on YaarWin with step-by-step instructions, latest bonus codes, and free rewards. Get safe account access, signup details, and updated offers for 2026.
 </p>
             <p className="mt-3 text-sm text-muted-foreground">
               <Clock className="mr-1 inline h-3.5 w-3.5 -translate-y-px text-primary" /> Last updated <strong className="text-foreground/80">{LAST_UPDATED}</strong> · Reviewed by the YaarWin Guide editorial team
