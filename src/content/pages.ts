@@ -1082,7 +1082,7 @@ export const contactContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
@@ -1228,7 +1228,7 @@ export const faqContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
@@ -1358,7 +1358,7 @@ export const privacyContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
@@ -1481,7 +1481,7 @@ export const termsContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
@@ -1590,7 +1590,7 @@ export const disclaimerContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
@@ -1770,7 +1770,7 @@ export const agencyContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
@@ -1938,7 +1938,7 @@ export const bonusesContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
@@ -2068,7 +2068,7 @@ export const giftCodeTodayContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
@@ -2195,7 +2195,7 @@ export const workingCodesContent: ContentPageProps = {
   ],
   "cta": {
     "label": "Open YaarWin",
-    "href": "https://yaarwin.net/#/register?invitationCode=26863113492"
+    "href": "https://www.jaiclub25.com/#/register?invitationCode=766633764567"
   },
   "related": [
     {
