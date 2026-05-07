@@ -52,7 +52,7 @@ export function SiteFooter() {
           <p>© {new Date().getFullYear()} YaarWin Information Hub. All rights reserved.</p>
           <p>
             Site developed by{" "}
-            <a href="https://t.me/veeranjan_solutions" target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">
+            <a href="https://t.me/veeranjan_solutions1" target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">
               Veeranjan Solutions
             </a>
           </p>
