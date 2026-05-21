@@ -2,8 +2,8 @@ export const SITE = {
   name: "YaarWin",
   domain: "https://yaarwinn.live", // ❗ no trailing slash
   tagline: "India's trusted YaarWin colour prediction guide & gift code hub",
-  loginUrl: "https://www.jaiclub25.com/#/register?invitationCode=766633764567",
-  registerUrl: "https://www.jaiclub25.com/#/register?invitationCode=766633764567",
+  loginUrl: "https://t.me/crypto_YaarWin_Jaiclub",
+  registerUrl: "https://yaarwin.app/#/register?invitationCode=62577807111",
   telegram: "https://t.me/yaarrwin",
 };
 
