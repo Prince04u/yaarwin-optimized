@@ -1,4 +1,4 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router"; 
 
 import appCss from "../styles.css?url";
 
@@ -37,7 +37,6 @@ export const Route = createRootRoute({
       { property: "og:site_name", content: "YaarWin" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-
     links: [
       {
         rel: "stylesheet",
@@ -47,28 +46,9 @@ export const Route = createRootRoute({
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap",
-      },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" },
     ],
-
     scripts: [
-      // Google Analytics
-      {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-5TZVDXH1RC",
-        async: true,
-      },
-      {
-        children: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-5TZVDXH1RC');
-        `,
-      },
-
-      // Organization Schema
       {
         type: "application/ld+json",
         children: JSON.stringify({
@@ -80,8 +60,6 @@ export const Route = createRootRoute({
           sameAs: ["https://t.me/yaarrwin"],
         }),
       },
-
-      // Website Schema
       {
         type: "application/ld+json",
         children: JSON.stringify({
@@ -93,7 +71,6 @@ export const Route = createRootRoute({
       },
     ],
   }),
-
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
@@ -104,7 +81,24 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5TZVDXH1RC"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-5TZVDXH1RC');
+            `,
+          }}
+        />
       </head>
+
       <body>
         {children}
         <Scripts />
