@@ -414,6 +414,47 @@ function Home() {
       <Section className="!pt-0">
         <FAQ items={homeFaqs} />
       </Section>
+      <Section className="!pt-0">
+  <div className="rounded-3xl border border-border bg-card p-8 shadow-card">
+    <h2 className="text-2xl font-bold tracking-tight">
+      YaarWin Resources
+    </h2>
+
+    <p className="mt-4 text-muted-foreground">
+      Explore additional YaarWin resources, login guides, account access
+      information, bonus details, and platform updates.
+    </p>
+
+    <div className="mt-6 grid gap-4 sm:grid-cols-2">
+      <a
+        href="https://yaarwinn.live/"
+        className="group rounded-xl border border-border bg-secondary/40 p-5 transition-all hover:border-primary/30 hover:bg-primary/5"
+      >
+        <div className="font-semibold text-primary">
+          Yaarwin
+        </div>
+        <div className="mt-1 text-sm text-muted-foreground">
+          Complete YaarWin guides, bonus codes, tutorials, and platform updates.
+        </div>
+      </a>
+
+      <a
+        href="https://yaarrwinlogin.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group rounded-xl border border-border bg-secondary/40 p-5 transition-all hover:border-primary/30 hover:bg-primary/5"
+      >
+        <div className="font-semibold text-primary">
+          YaarWin Login
+        </div>
+        <div className="mt-1 text-sm text-muted-foreground">
+          Login instructions, registration help, account access information,
+          and troubleshooting guides.
+        </div>
+      </a>
+    </div>
+  </div>
+</Section>
 
       {/* FINAL CTA */}
       <Section className="!pt-0">
